@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url('g.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ 
+ h1 {
+    text-align: center;
+    color: #333;
+ }
+ 
+ form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+ }
+ 
+ label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+    color: #333;
+ }
+ 
+ input[type="text"], select, textarea {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+ }
+ 
+ textarea {
+    vertical-align: top;
+ }
+ 
+ input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+ 
+ input[type="submit"]:hover {
+    background-color: #45a049;
+ }
