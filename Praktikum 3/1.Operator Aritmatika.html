@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operasi Aritmatika dalam HTML</title>
+</head>
+<body>
+
+<h2>Operasi Aritmatika</h2>
+
+<p>Masukkan dua angka:</p>
+
+<input type="number" id="num1">
+<input type="number" id="num2">
+
+<button onclick="tambah()">Tambah</button>
+<button onclick="kurang()">Kurang</button>
+<button onclick="kali()">Kali</button>
+<button onclick="bagi()">Bagi</button>
+
+<p id="hasil"></p>
+
+<script>
+    function tambah() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        document.getElementById("hasil").innerHTML = "Hasil: " + (num1 + num2);
+    }
+
+    function kurang() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        document.getElementById("hasil").innerHTML = "Hasil: " + (num1 - num2);
+    }
+
+    function kali() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        document.getElementById("hasil").innerHTML = "Hasil: " + (num1 * num2);
+    }
+
+    function bagi() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        if (num2 !== 0) {
+            document.getElementById("hasil").innerHTML = "Hasil: " + (num1 / num2);
+        } else {
+            document.getElementById("hasil").innerHTML = "Error: Pembagian dengan nol";
+        }
+    }
+</script>
+
+</body>
+</html>
