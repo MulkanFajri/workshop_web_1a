@@ -1,5 +1,5 @@
 :root{
-    --custom-background-color: #0284C7
+    --custom-background-color: #556B2F
 }
 
 .bg-primary{
@@ -9,4 +9,10 @@
 .nav-link.active {
     background-color: var(--custom-background-color) !important; 
 }
- 
+.btn-primary {
+    background-color: var(--custom-background-color) !important;
+}
+
+.dropdown-item:active {
+    background-color: var(--custom-background-color) !important;
+}
