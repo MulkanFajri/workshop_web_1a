@@ -16,3 +16,12 @@
 .dropdown-item:active {
     background-color: var(--custom-background-color) !important;
 }
+
+table {
+    color: white;
+}
+
+thead {
+    color: white;
+}
+
