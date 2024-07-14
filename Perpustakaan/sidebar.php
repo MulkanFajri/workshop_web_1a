@@ -14,40 +14,43 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav nav-pills flex-column justify-content-end flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link ps-2 <?php echo ((isset($_GET['x']) && $_GET['x'] == 'dashboard') || !isset($_GET['x'])) ?
+                    <li class="nav-item">
+                            <a class="nav-link ps-2 <?php echo ((isset($_GET['x']) && ($_GET['x']) == 'home') || !isset($_GET['x'])) ?
                                 'active link-light' : 'link-dark'; ?>" 
-                                aria-current="page" href="index.php"><i class= "bi bi-house-door-fill"></i> Dashboard</a>
+                                aria-current="page" href="home"><i class= "bi bi-house-door-fill"></i> Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'pustaka') ?
-                                'active link-light' : 'link-dark'; ?>" href="pustaka.php?
-                                        x=pustaka"><i class="bi bi-journal-text"></i>
+                                'active link-light' : 'link-dark'; ?>" href="pustaka"><i class="bi bi-journal-text"></i>
                                 Pustaka</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'keranjang') ?
-                                'active link-light' : 'link-dark'; ?>" href="keranjang.php?
-                                        x=keranjang"><i class="bi bi-cart4"></i> Keranjang</a>
+                                'active link-light' : 'link-dark'; ?>" href="keranjang"><i class="bi bi-cart4"></i> Keranjang</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'peminjaman') ?
-                                'active link-light' : 'link-dark'; ?>" href="peminjaman.php?
-                                        x=peminjaman"><i class="bi bi-handbag-fill"></i>
+                                'active link-light' : 'link-dark'; ?>" href="peminjaman"><i class="bi bi-handbag-fill"></i>
                                 Peminjaman</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'keterlambatan') ?
-                                'active link-light' : 'link-dark'; ?>" href="keterlambatan.php?
-                                        x=keterlambatan"><i class="bi bi-exclamation-square-fill"></i>
+                                'active link-light' : 'link-dark'; ?>" href="keterlambatan"><i class="bi bi-exclamation-square-fill"></i>
                                 Keterlambatan</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'denda') ?
-                                'active link-light' : 'link-dark'; ?>" href="denda.php?
-                                        x=denda"><i class="bi bi-currency-dollar"></i>
+                                'active link-light' : 'link-dark'; ?>" href="denda"><i class="bi bi-currency-dollar"></i>
                                 Denda</a>
                         </li>
+                        <?php if($hasil['level']==1){?>
+                        <li class="nav-item">
+                            <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'user') ?
+                                'active link-light' : 'link-dark'; ?>" href="user"><i class="bi bi-person-vcard"></i>
+                                user</a>
+                        </li>
+                        
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
