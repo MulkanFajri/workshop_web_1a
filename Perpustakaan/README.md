@@ -12,12 +12,12 @@ Fitur-fitur pada Aplikasi pada kali ini :
 • Transaksi Proses Pengembalian Buku Mengelola data Denda
 Alur Program Perpustakaan
 
-1. Halaman Depan (Sebelum Login)
+1. Halaman Depan (Sebelum Login) :
 • Halaman Login
 • Halaman Registrasi Anggota (Pengguna
 Login)
 
-2. Role Akses Petugas
+2. Role Akses Petugas :
 • Dashboard Aplikasi
 • Halaman Track Pengunjung
 • Halaman Data Pengunjung
@@ -32,7 +32,7 @@ Transaksi Pengembalian Buku
 • CRUD Denda
 • Edit Pengaturan
 
-3. Role Akses Anggota
+3. Role Akses Anggota :
 • Halaman Data Peminjaman Buku Anggota
 • Halaman Data Pengembalian Buku Anggota
 • Cari Buku
