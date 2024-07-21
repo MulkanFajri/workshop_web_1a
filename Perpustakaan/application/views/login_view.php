@@ -83,6 +83,8 @@
                 </div>
                 <br>
                 <p>Belum Punya Akun ? Silahkan <a href="<?= base_url('login/daftar');?>">Daftar</a></p>
+                <p>Admin username : mulkan password : secret <br>
+                member username : aulia password : secret</p>
             </form>
         </div>
         <!-- /.login-box-body -->
